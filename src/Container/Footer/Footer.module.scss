@@ -1,0 +1,117 @@
+.app__footer {
+  border-radius: 20px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    .app__footer-card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 1rem 0.25rem;
+      .card-img {
+        width: 10%;
+        img {
+          width: 100%;
+        }
+      }
+      a {
+        font-size: 1.75rem;
+        text-decoration: none;
+        color: rgb(63, 63, 204);
+      }
+    }
+
+    .app__footer-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 45%;
+      @media (max-width: 900px) {
+        width: 80%;
+      }
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      label {
+        font-size: 2rem;
+      }
+
+      input {
+        font-size: 1.5rem;
+        width: 80%;
+        height: 3rem;
+        outline: none;
+        padding: 2rem;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .form-textarea {
+        textarea {
+          width: 100%;
+          height: 15rem;
+          font-size: 1.5rem;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          padding: 2rem;
+        }
+      }
+
+      button {
+        align-self: center;
+        width: 50%;
+        padding: 1.2rem 2.4rem;
+        font-size: 1.5rem;
+        background-color: var(--secondary-color);
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+    }
+  }
+  .message {
+    font-size: 4rem;
+  }
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      svg {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.2rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.app__skills {
+  border-radius: 20px;
+  &-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: 3rem;
+    .skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      &-container {
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 0.75rem;
+      }
+      img {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-experiences {
+    padding: 1rem;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      .experience-year {
+        margin-right: 2rem;
+        h1 {
+          font-size: 2.75rem;
+        }
+      }
+
+      .experience__work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &-name {
+          font-size: 2.25rem;
+        }
+
+        &-role {
+          font-size: 1.75rem;
+          padding-top: 0.75rem;
+          font-weight: 400;
+        }
+
+        &-description {
+          font-size: 1.6rem;
+          padding-top: 1rem;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  &-skillexp {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 6rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.item {
+  border-radius: 20px;
+  padding: 1.2rem;
+  position: relative;
+  // box-shadow: 0 0.25rem 1.2rem 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  animation: animateDownToUp 0.4s ease-in-out;
+
+  &:hover {
+    .links {
+      z-index: 1;
+    }
+  }
+  .overlay {
+    cursor: pointer;
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+  .links {
+    position: absolute;
+    top: 12px;
+    width: 91%;
+    height: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    gap: 20%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    a {
+      color: rgb(0, 0, 0);
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+  .tags {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 63%;
+    left: 29%;
+    width: 41%;
+    height: 11%;
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes animateDownToUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

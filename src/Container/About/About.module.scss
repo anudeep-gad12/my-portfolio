@@ -1,0 +1,10 @@
+.about {
+  border-radius: 20px;
+
+  &__profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 28rem);
+    gap: 6rem;
+    justify-content: center;
+  }
+}
