@@ -49,8 +49,11 @@ const Footer = () => {
           <div className={classes["card-img"]}>
             <img src={images.email} alt="email" />
           </div>
-          <a href="mailto:xyz@gmail.com" className={classes["card-link"]}>
-            xyz@gmail.com
+          <a
+            href="mailto:anudeep.gad@gmail.com"
+            className={classes["card-link"]}
+          >
+            anudeep.gad@gmail.com
           </a>
         </div>
 
